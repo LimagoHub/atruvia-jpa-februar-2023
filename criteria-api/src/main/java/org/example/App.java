@@ -27,6 +27,7 @@ public class App
         //new MultiSelectDemo(entityManagerFactory).go();
         //new JoinFetchDemo(entityManagerFactory).go();
         //new SubSelectDemo(entityManagerFactory).go();
-        new SubSelectExistsDemo(entityManagerFactory).go();
+        //new SubSelectExistsDemo(entityManagerFactory).go();
+        new EntityGraphExample(entityManagerFactory).go();
     }
 }

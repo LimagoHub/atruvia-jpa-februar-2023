@@ -15,22 +15,27 @@ import java.util.List;
 @ToString
 @Entity
 @Table(name = "customers")
-@NamedEntityGraph(
-        name = "customer-entity-graph-with-orders-users",
-        attributeNodes = {
-                //@NamedAttributeNode("orders"),
-                @NamedAttributeNode(value = "orders", subgraph = "order-subgraph"),
-        },
-        subgraphs = {
-                @NamedSubgraph(
-                        name = "order-subgraph",
+@NamedEntityGraphs(
+        {
+                @NamedEntityGraph(
+                        name = "customer-entity-graph-with-orders-employees",
                         attributeNodes = {
-                                @NamedAttributeNode("employeeID"),
-                                @NamedAttributeNode("orderDetails")
+                                //@NamedAttributeNode("orders"),
+                                @NamedAttributeNode(value = "orders", subgraph = "order-subgraph"),
+                        },
+                        subgraphs = {
+                                @NamedSubgraph(
+                                        name = "order-subgraph",
+                                        attributeNodes = {
+                                                @NamedAttributeNode("employeeID"),
+                                                @NamedAttributeNode("orderDetails")
+                                        }
+
+                                )
+
+
                         }
-
-                 )
-
+                )
 
         }
 )
