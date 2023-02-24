@@ -1,0 +1,22 @@
+version: "3.2"
+
+services:
+  
+       
+  mariadb:
+    container_name: maria-db
+    image: mariadb:latest
+    expose:
+        - 3306
+    ports:
+      - '127.0.0.1:3307:3306'
+    restart: 'always'
+    #volumes: 
+    #    - c:/var/mariadb/data:/var/lib/mysql
+        
+    environment:
+      MYSQL_ROOT_PASSWORD: geheim
+
+
+
+        

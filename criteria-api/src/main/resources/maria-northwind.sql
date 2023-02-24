@@ -1,3 +1,4 @@
+use atruviadb;
 CREATE TABLE Categories
 (
     CategoryID   INTEGER     NOT NULL AUTO_INCREMENT,

@@ -1,0 +1,1 @@
+docker run --name some-mariadb -v c:/Applications/Data:/var/lib/mysql -e MARIADB_ROOT_PASSWORD=geheim -p 127.0.0.1:3307:3306 -d mariadb:latest
