@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="renamerInitialized" value="true" />
+    <option name="reverseEngineeringLastDbConnectionId" value="07c267fe-500a-419e-90f0-cf8c7b13d8ae" />
+    <option name="reLastEntityCreationPackage" value="firstjpa/src/main/java/de/atruvia/entities" />
+  </component>
+</project>
