@@ -23,6 +23,10 @@ public class App
             entityManagerFactory.close();
         }
         ));
-        new SimpleCriteriaApi(entityManagerFactory).go();
+        //new SimpleCriteriaApi(entityManagerFactory).go();
+        //new MultiSelectDemo(entityManagerFactory).go();
+        //new JoinFetchDemo(entityManagerFactory).go();
+        //new SubSelectDemo(entityManagerFactory).go();
+        new SubSelectExistsDemo(entityManagerFactory).go();
     }
 }
